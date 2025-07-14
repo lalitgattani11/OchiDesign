@@ -5,19 +5,7 @@ import ServicesPage from "./pages/ServicesPage";
 import OurWorkPage from "./pages/OurWorkPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 
-// Locomotive Scroll only on home page
-if (typeof window !== "undefined" && window.location.pathname === "/") {
-  setTimeout(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
-    });
-    document.documentElement.classList.add("has-scroll-smooth");
-  }, 500);
-}
 
 function App() {
   return (
