@@ -8,7 +8,7 @@ import Testimonials from "./Testimonials";
 
 function Home() {
   return (
-    <div data-scroll-container>
+    <div>
       <LandingPage />
       <Marquee />
       <About />
