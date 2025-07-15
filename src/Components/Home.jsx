@@ -5,6 +5,8 @@ import AnimateEye from "./AnimateEye";
 import Features from "./Features";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
+import Team from "./Team";
+import Brands from "./Brands";
 
 function Home() {
   return (
@@ -12,9 +14,10 @@ function Home() {
       <LandingPage />
       <Marquee />
       <About />
-      <AnimateEye />
       <Features />
-      <Testimonials/>
+      <Brands />
+      <Team />
+      <Testimonials />
       <Footer />
     </div>
   );

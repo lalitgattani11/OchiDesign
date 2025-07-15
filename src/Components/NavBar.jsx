@@ -23,7 +23,6 @@ export default function NavBar() {
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-20">
             <div className="flex h-20 items-center">
-              {/* Logo left */}
               <div className="flex-shrink-0">
                 <Link to="/" className="flex items-center">
                   <svg

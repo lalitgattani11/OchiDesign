@@ -13,7 +13,7 @@ function Features() {
   };
 
   return (
-    <div className="w-full py-20 font-neue bg-[#F1F1F1]">
+    <div className="w-full py-20 font-neue bg-[#ebebeb]">
       <div className="w-full px-5 md:px-24 border-b border-zinc-500 pb-10 md:pb-20">
         <h1 className="text-4xl md:text-7xl tracking-tight pb-6 md:pb-10">
           Featured projects
