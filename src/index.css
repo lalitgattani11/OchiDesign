@@ -4,29 +4,17 @@
 
 @font-face {
   font-family: 'NeueMontreal';
-  src: url('/Fonts/NeueMontreal-Regular.ttf') format('truetype');
+  src: url('/Fonts/NeueMontreal-Regular.woff2') format('woff2'),
+       url('/Fonts/NeueMontreal-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueMontreal';
-  src: url('/Fonts/NeueMontreal-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'FoundersGrotesk';
-  src: url('/Fonts/FoundersGrotesk-Semibold.ttf') format('truetype');
+  src: url('/Fonts/FoundersGrotesk-Semibold.woff2') format('woff2'),
+       url('/Fonts/FoundersGrotesk-Semibold.woff') format('woff');
   font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'FoundersGrotesk';
-  src: url('/Fonts/FoundersGrotesk-Black.ttf') format('truetype');
-  font-weight: 900;
   font-style: normal;
 }
 
@@ -35,6 +23,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: 'NeueMontreal', sans-serif;
 }
 
 [data-scroll-container] {
