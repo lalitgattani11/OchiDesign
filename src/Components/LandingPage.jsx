@@ -20,7 +20,7 @@ function LandingPage() {
                     style={{
                       background:
                         "linear-gradient(135deg, #004D43 0%, #CDEA68 100%)",
-                      boxShadow: "0 0 30px rgba(205, 234, 104, 0.5)", // Optional outer container glow
+                      boxShadow: "0 0 30px rgba(205, 234, 104, 0.5)",
                     }}
                   >
                     <svg
@@ -31,7 +31,7 @@ function LandingPage() {
                       xmlns="http://www.w3.org/2000/svg"
                       style={{
                         filter:
-                          "drop-shadow(0 0 10px rgba(205, 234, 104, 0.8))", // Glow on logo
+                          "drop-shadow(0 0 10px rgba(205, 234, 104, 0.8))",
                       }}
                     >
                       <path
@@ -67,7 +67,6 @@ function LandingPage() {
       </div>
 
       <div className="border-t-[1px] border-zinc-800 mt-24 flex flex-col lg:flex-row justify-between items-center gap-4 py-5 px-5 sm:px-10 md:px-20 pb-20">
-        {/* Para container */}
         <div className="flex flex-col sm:flex-col md:flex-row items-center gap-4 text-center lg:text-left">
           <p className="text-base sm:text-lg font-medium leading-snug flex items-center">
             For public and private companies
@@ -77,8 +76,6 @@ function LandingPage() {
             From the first pitch to IPO
           </p>
         </div>
-
-        {/* Link container */}
         <div className="flex justify-center w-full md:w-full lg:w-auto">
           <Link
             to="/contact"

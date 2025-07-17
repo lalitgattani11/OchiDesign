@@ -1,5 +1,4 @@
 function ContactPage() {
-
   return (
     <div className="w-full bg-[#F1F1F1]">
       <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-founders tracking-normal leading-tight font-semibold px-6 sm:px-10 md:px-20 uppercase pt-32 sm:pt-36 md:pt-40">
@@ -108,7 +107,7 @@ function ContactPage() {
             </div>
 
             <div className="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
-              <h2 className="text-indigo-600 font-manrope text-4xl font-semibold leading-10 mb-11">
+              <h2 className="text-[#b7d856] font-manrope text-4xl font-semibold leading-10 mb-11">
                 Send Us A Message
               </h2>
               <form action="https://formspree.io/f/myzpgrjd" method="POST">
@@ -142,7 +141,7 @@ function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-indigo-800 bg-indigo-600 shadow-sm"
+                  className="w-full h-12 text-[#042621dd] text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-[#CDEA68] hover:bg-[#b7d856] shadow-sm"
                 >
                   Send
                 </button>

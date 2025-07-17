@@ -2,10 +2,15 @@ import { motion, useAnimation } from "framer-motion";
 import React from "react";
 
 function Features() {
-  const cards = [useAnimation(), useAnimation()];
+  const cards = [
+    useAnimation(),
+    useAnimation(),
+    useAnimation(),
+    useAnimation(),
+  ];
 
   const handleHover = (index) => {
-    cards[index].start({ y: "0" });
+    cards[index].start({ y: "0%" });
   };
 
   const handleHoverEnd = (index) => {
@@ -27,12 +32,7 @@ function Features() {
             onHoverEnd={() => handleHoverEnd(0)}
             className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
           >
-            <h1
-              className="absolute flex flex-col items-center text-center overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 
-              z-[9] uppercase text-[#CDEA68] 
-              text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 
-              leading-none font-black tracking-tight px-2 max-w-[90%] break-words"
-            >
+            <h1 className="absolute flex flex-col items-center text-center overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase text-[#CDEA68] text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-none font-black tracking-tight px-2 max-w-[90%] break-words">
               <div className="flex overflow-hidden">
                 {"Salience".split("").map((item, index) => (
                   <motion.span
@@ -83,12 +83,7 @@ function Features() {
             onHoverEnd={() => handleHoverEnd(1)}
             className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
           >
-            <h1
-              className="absolute flex flex-col items-center text-center overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 
-              z-[9] uppercase text-[#CDEA68] 
-              text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 
-              leading-none font-black tracking-tight px-2 max-w-[90%] break-words"
-            >
+            <h1 className="absolute flex flex-col items-center text-center overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase text-[#CDEA68] text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-none font-black tracking-tight px-2 max-w-[90%] break-words">
               <div className="flex overflow-hidden">
                 {"Cardboard".split("").map((item, index) => (
                   <motion.span
@@ -139,21 +134,16 @@ function Features() {
       <div className="wholecard">
         <div className="cards w-full flex flex-col md:flex-row gap-6 md:gap-9 rounded-2xl mt-16 md:mt-24 px-5 md:px-20">
           <motion.div
-            onHoverStart={() => handleHover(0)}
-            onHoverEnd={() => handleHoverEnd(0)}
+            onHoverStart={() => handleHover(2)}
+            onHoverEnd={() => handleHoverEnd(2)}
             className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
           >
-            <h1
-              className="absolute flex overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 
-              z-[9] uppercase text-[#CDEA68] 
-              text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 
-              leading-none font-black tracking-tight px-2 max-w-[90%] break-words"
-            >
+            <h1 className="absolute flex overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase text-[#CDEA68] text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-none font-black tracking-tight px-2 max-w-[90%] break-words">
               {"Fyde".split("").map((item, index) => (
                 <motion.span
                   key={index}
                   initial={{ y: "100%" }}
-                  animate={cards[0]}
+                  animate={cards[2]}
                   transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.05 }}
                   className="inline-block"
                 >
@@ -173,21 +163,16 @@ function Features() {
           </motion.div>
 
           <motion.div
-            onHoverStart={() => handleHover(1)}
-            onHoverEnd={() => handleHoverEnd(1)}
+            onHoverStart={() => handleHover(3)}
+            onHoverEnd={() => handleHoverEnd(3)}
             className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
           >
-            <h1
-              className="absolute flex overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 
-              z-[9] uppercase text-[#CDEA68] 
-              text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 
-              leading-none font-black tracking-tight px-2 max-w-[90%] break-words"
-            >
+            <h1 className="absolute flex overflow-hidden left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] uppercase text-[#CDEA68] text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-none font-black tracking-tight px-2 max-w-[90%] break-words">
               {"Vise".split("").map((item, index) => (
                 <motion.span
                   key={index}
                   initial={{ y: "100%" }}
-                  animate={cards[1]}
+                  animate={cards[3]}
                   transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.05 }}
                   className="inline-block"
                 >

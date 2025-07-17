@@ -56,7 +56,6 @@ export default function NavBar() {
                 </Link>
               </div>
 
-              {/* Desktop links from md and up */}
               <div className="hidden md:flex ml-auto space-x-5">
                 {navigation.map((item) => (
                   <NavLink
@@ -76,7 +75,6 @@ export default function NavBar() {
                 ))}
               </div>
 
-              {/* Mobile button only for < md */}
               <div className="flex md:hidden ml-auto">
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-200 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -90,7 +88,6 @@ export default function NavBar() {
             </div>
           </div>
 
-          {/* Mobile links */}
           <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (

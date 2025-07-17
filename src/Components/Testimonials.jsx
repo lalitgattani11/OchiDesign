@@ -37,7 +37,6 @@ function Testimonials() {
             key={index}
             className="relative bg-[#0F3E36] rounded-2xl p-6 flex flex-col items-start text-left transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 w-[340px] h-[340px] mb-10"
           >
-            {/* Accent border layer */}
             <div className="absolute inset-0 border border-[#CDEA68] opacity-20 rounded-2xl pointer-events-none"></div>
 
             <img
