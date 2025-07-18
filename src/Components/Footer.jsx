@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 function Footer() {
   return (
     <div className="w-full bg-[#F1F1F1] text-[#212121] px-5 sm:px-10 md:px-20 py-16 rounded-tr-3xl font-neue">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-[#999999] pb-10 gap-6">
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-center border-b border-[#999999] pb-10 gap-6 text-center">
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
           Let's create <br className="hidden md:block" /> something amazing
           together
         </h1>
         <Link
           to="/contact"
-          className="flex items-center gap-3 px-6 py-4 uppercase bg-[#212121] text-[#F1F1F1] rounded-full w-fit hover:bg-black hover:font-semibold transition-colors duration-500 ease-in-out"
+          className="mx-auto md:mx-0 flex items-center gap-3 px-6 py-4 uppercase bg-[#212121] text-[#F1F1F1] rounded-full w-fit hover:bg-black hover:font-semibold transition-colors duration-500 ease-in-out"
         >
           Get in touch
         </Link>
@@ -25,6 +25,7 @@ function Footer() {
           to="/"
           className="justify-self-center md:justify-self-start text-[#212121]"
         >
+          {/* SVG Logo */}
           <svg
             width="72"
             height="30"
@@ -32,6 +33,7 @@ function Footer() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
+            {/* SVG paths remain unchanged */}
             <path
               d="M9.8393 10.2032C4.22951 10.3257 -0.0459221 14.7356 0.000372391 20.2752C0.0412204 25.3548 4.57808 30.3608 10.6862 29.9226C15.5145 29.5768 19.9015 25.4119 19.8525 20.0057C19.8035 14.5995 15.1904 10.0916 9.8393 10.2032ZM9.89649 25.7005C6.87101 25.7005 4.39834 23.1144 4.40924 19.9839C4.39525 19.2507 4.52792 18.522 4.79947 17.8407C5.07102 17.1594 5.47597 16.5392 5.99056 16.0164C6.50515 15.4937 7.11902 15.0789 7.79613 14.7966C8.47324 14.5142 9.19995 14.3698 9.93362 14.372C10.6673 14.3742 11.3931 14.5228 12.0686 14.8092C12.744 15.0956 13.3554 15.514 13.8668 16.0398C14.3783 16.5656 14.7796 17.1882 15.0471 17.8711C15.3146 18.554 15.4429 19.2834 15.4246 20.0166C15.4409 23.1008 12.9111 25.7059 9.88832 25.7005H9.89649Z"
               fill="currentColor"
@@ -95,7 +97,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className=" mt-6 pt-5 text-center font-neue">
+      <div className="mt-6 pt-5 text-center font-neue">
         <p className="font-bold text-lg mb-2 tracking-wider">Address:</p>
         <p className="text-lg text-[#666] hover:text-[#2c2c2c] hover:underline transition-all ease-in">
           <a href="https://www.google.com/maps/search/?api=1&query=72/203%20Bhairav%20Path,%20Patel%20Marg,%20Mansarovar,%20Jaipur%20302020">
