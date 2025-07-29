@@ -1,4 +1,5 @@
 import Features from "../Components/Features";
+import Footer from "../Components/Footer";
 
 function OurWorkPage() {
   return (
@@ -13,6 +14,7 @@ function OurWorkPage() {
       </div>
 
       <Features />
+      <Footer/>
     </div>
   );
 }

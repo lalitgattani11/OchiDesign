@@ -1,4 +1,5 @@
 import Testimonials from "../Components/Testimonials";
+import Footer from "../Components/Footer";
 
 function ServicesPage() {
   return (
@@ -83,6 +84,7 @@ function ServicesPage() {
         </div>
       </div>
       <Testimonials />
+      <Footer/>
     </div>
   );
 }

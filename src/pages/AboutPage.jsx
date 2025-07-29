@@ -1,4 +1,5 @@
 import Team from "../Components/Team";
+import Footer from "../Components/Footer";
 
 function AboutPage() {
   return (
@@ -44,6 +45,7 @@ function AboutPage() {
         />
       </div>
       <Team/>
+      <Footer/>
     </div>
   );
 }
